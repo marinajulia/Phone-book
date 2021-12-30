@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q0522pTGQNlQ5b1Ev+9CrS+NBrkQhnZqrsnu6cr9KvuPEQ3fxX2NKWCQ/OTnYxzdv5gzqMqmWhIra9P6fr5zAg==",
+  "dgSpecHash": "+WEKUWjlTuK6dNapgLcfEiTEYgnUZo4j5lakNI41m50JICMVTlDUXwSz7zu52jNiq7qqMEeMoNJZ5qz6zIOEnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marin\\source\\repos\\Agenda\\Agenda\\PhoneBook.Api.csproj",
+  "projectFilePath": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Infra\\PhoneBook.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\marin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

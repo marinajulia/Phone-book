@@ -1,0 +1,12 @@
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.deps.json
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.runtimeconfig.json
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.runtimeconfig.dev.json
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.dll
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.pdb
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.csproj.AssemblyReference.cache
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.AssemblyInfo.cs
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.dll
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.pdb
+C:\Users\marin\source\repos\Agenda\PhoneBook.SharedKernel\obj\Debug\netcoreapp3.1\PhoneBook.SharedKernel.genruntimeconfig.cache

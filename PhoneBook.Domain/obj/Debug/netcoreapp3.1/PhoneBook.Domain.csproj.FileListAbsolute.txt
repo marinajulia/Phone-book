@@ -1,0 +1,15 @@
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.Domain.deps.json
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.Domain.runtimeconfig.json
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.Domain.runtimeconfig.dev.json
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.Domain.dll
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.Domain.pdb
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.dll
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\bin\Debug\netcoreapp3.1\PhoneBook.SharedKernel.pdb
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.csproj.AssemblyReference.cache
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.AssemblyInfoInputs.cache
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.AssemblyInfo.cs
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.csproj.CopyComplete
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.dll
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.pdb
+C:\Users\marin\source\repos\Agenda\PhoneBook.Domain\obj\Debug\netcoreapp3.1\PhoneBook.Domain.genruntimeconfig.cache

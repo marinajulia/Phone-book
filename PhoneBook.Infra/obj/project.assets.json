@@ -1511,22 +1511,6 @@
           "bin/placeholder/PhoneBook.Domain.dll": {}
         }
       },
-      "PhoneBook.Infra/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.22",
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.22",
-          "PhoneBook.Domain": "1.0.0",
-          "PhoneBook.SharedKernel": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/PhoneBook.Infra.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PhoneBook.Infra.dll": {}
-        }
-      },
       "PhoneBook.SharedKernel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5763,11 +5747,6 @@
       "path": "../PhoneBook.Domain/PhoneBook.Domain.csproj",
       "msbuildProject": "../PhoneBook.Domain/PhoneBook.Domain.csproj"
     },
-    "PhoneBook.Infra/1.0.0": {
-      "type": "project",
-      "path": "../PhoneBook.Infra/PhoneBook.Infra.csproj",
-      "msbuildProject": "../PhoneBook.Infra/PhoneBook.Infra.csproj"
-    },
     "PhoneBook.SharedKernel/1.0.0": {
       "type": "project",
       "path": "../PhoneBook.SharedKernel/PhoneBook.SharedKernel.csproj",
@@ -5781,7 +5760,6 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.22",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.22",
       "PhoneBook.Domain >= 1.0.0",
-      "PhoneBook.Infra >= 1.0.0",
       "PhoneBook.SharedKernel >= 1.0.0"
     ]
   },
@@ -5793,11 +5771,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marin\\source\\repos\\Agenda\\Agenda\\PhoneBook.Api.csproj",
-      "projectName": "PhoneBook.Api",
-      "projectPath": "C:\\Users\\marin\\source\\repos\\Agenda\\Agenda\\PhoneBook.Api.csproj",
+      "projectUniqueName": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Infra\\PhoneBook.Infra.csproj",
+      "projectName": "PhoneBook.Infra",
+      "projectPath": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Infra\\PhoneBook.Infra.csproj",
       "packagesPath": "C:\\Users\\marin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marin\\source\\repos\\Agenda\\Agenda\\obj\\",
+      "outputPath": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5822,9 +5800,6 @@
           "projectReferences": {
             "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Domain\\PhoneBook.Domain.csproj": {
               "projectPath": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Domain\\PhoneBook.Domain.csproj"
-            },
-            "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Infra\\PhoneBook.Infra.csproj": {
-              "projectPath": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.Infra\\PhoneBook.Infra.csproj"
             },
             "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.SharedKernel\\PhoneBook.SharedKernel.csproj": {
               "projectPath": "C:\\Users\\marin\\source\\repos\\Agenda\\PhoneBook.SharedKernel\\PhoneBook.SharedKernel.csproj"
@@ -5874,9 +5849,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
