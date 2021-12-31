@@ -1,7 +1,9 @@
-﻿namespace PhoneBook.Domain.Services.Contact
+﻿using PhoneBook.Domain.Services.Contact.Dto;
+
+namespace PhoneBook.Domain.Services.Contact
 {
     public interface IContactService
     {
-        bool PostContact(ContactEntity contact);
+        bool PostContact(ContactDto contact);
     }
 }
