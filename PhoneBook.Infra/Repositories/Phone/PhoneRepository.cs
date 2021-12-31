@@ -1,5 +1,6 @@
 ﻿using PhoneBook.Domain.Services.Phone;
 using PhoneBook.Infra.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -17,7 +18,20 @@ namespace PhoneBook.Infra.Repositories.Phone
 
         public bool PostPhone(PhoneEntity phone)
         {
-            throw new System.NotImplementedException();
+            using (var context = new ApplicationContext())
+            {
+                try
+                {
+                    context.Phone.Add(phone);
+                    context.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
+
+                return true;
+            }
         }
     }
 }
