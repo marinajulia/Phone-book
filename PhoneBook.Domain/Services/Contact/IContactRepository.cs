@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace PhoneBook.Domain.Services.Contact
 {
-    interface IContactRepository
+    public interface IContactRepository
     {
+        bool PostContact(ContactEntity contact);
+        IEnumerable<ContactEntity> GetByName(string name);
     }
 }

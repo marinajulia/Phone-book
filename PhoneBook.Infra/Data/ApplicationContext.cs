@@ -17,7 +17,6 @@ namespace PhoneBook.Infra.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.CreateMap();
-
             base.OnModelCreating(modelBuilder);
         }
     }

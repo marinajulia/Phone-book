@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore": "3.1.22",
           "Microsoft.EntityFrameworkCore.Design": "3.1.22",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.22",
-          "Microsoft.EntityFrameworkCore.Tools": "3.1.22"
+          "Microsoft.EntityFrameworkCore.Tools": "3.1.22",
+          "SharedKernel.Domain": "1.0.0.0"
         },
         "runtime": {
           "PhoneBook.SharedKernel.dll": {}
@@ -1033,6 +1034,14 @@
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
         }
+      },
+      "SharedKernel.Domain/1.0.0.0": {
+        "runtime": {
+          "SharedKernel.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1741,6 +1750,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "SharedKernel.Domain/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PhoneBook.Domain.Services.Contact
+﻿namespace PhoneBook.Domain.Services.Contact
 {
-    interface Interface1
+    public interface IContactService
     {
     }
 }

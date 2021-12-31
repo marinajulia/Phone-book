@@ -27,5 +27,11 @@
     <ProjectReference Include="..\PhoneBook.SharedKernel\PhoneBook.SharedKernel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="SharedKernel.Domain">
+      <HintPath>..\..\Estacionamento rift\Dlls\SharedKernel.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 
 </Project>
