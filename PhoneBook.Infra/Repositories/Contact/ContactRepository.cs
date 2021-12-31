@@ -12,7 +12,15 @@ namespace PhoneBook.Infra.Repositories.Contact
         {
             using (var context = new ApplicationContext())
             {
-                return context.Contact.Where(x => x.Name.Trim().ToLower() == name.Trim().ToLower());
+                return context.Contact.Where(x => x.Name.Trim().ToLower().Contains(name.Trim().ToLower())).ToList();
+            }
+        }
+
+        public ContactEntity GetName(string name)
+        {
+            using (var context = new ApplicationContext())
+            {
+                return context.Contact.FirstOrDefault(x => x.Name.Trim().ToLower() == name.Trim().ToLower());
             }
         }
 

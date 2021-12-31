@@ -4,7 +4,7 @@ namespace PhoneBook.Domain.Services.Phone
 {
     public interface IPhoneRepository
     {
-        bool PostContact(PhoneEntity phone);
+        bool PostPhone(PhoneEntity phone);
         IEnumerable<PhoneEntity> GetByPhone(string phone);
     }
 }
