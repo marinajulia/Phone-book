@@ -11,8 +11,8 @@ namespace PhoneBook.Infra.Data
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-SN81A5J\SQLEXPRESS;Initial Catalog=PhoneBook;Integrated Security=True");
         }
 
-        public DbSet<PhoneEntity> Phone{ get; set; }
-        public DbSet<ContactEntity> Contact{ get; set; }
+        public DbSet<PhoneEntity> Phone { get; set; }
+        public DbSet<ContactEntity> Contact { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -21,4 +21,8 @@
     <ProjectReference Include="..\PhoneBook.SharedKernel\PhoneBook.SharedKernel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Phone\Dto\" />
+  </ItemGroup>
+
 </Project>

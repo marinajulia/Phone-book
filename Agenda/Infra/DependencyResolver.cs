@@ -17,17 +17,17 @@ namespace PhoneBook.Api.Infra
             Repositories(services);
             Services(services);
         }
+
         public static void Repositories(IServiceCollection services)
         {
             services.AddScoped<IPhoneRepository, PhoneRepository>();
             services.AddScoped<IContactRepository, ContactRepository>();
-
         }
+
         public static void Services(IServiceCollection services)
         {
             services.AddScoped<IPhoneService, PhoneService>();
             services.AddScoped<IContactService, ContactService>();
-
         }
     }
 }

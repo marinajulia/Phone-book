@@ -9,7 +9,7 @@ namespace PhoneBook.Infra.Repositories.Phone
     public class PhoneRepository : IPhoneRepository
     {
         public IEnumerable<PhoneEntity> GetByPhone(string phone)
-        {                                                                                                 
+        {
             using (var context = new ApplicationContext())
             {
                 return context.Phone.Where(x => x.Phone.Trim().ToLower() == phone.Trim().ToLower());

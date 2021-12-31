@@ -2,5 +2,6 @@
 {
     public interface IContactService
     {
+        bool PostContact(ContactEntity contact);
     }
 }

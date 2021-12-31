@@ -26,7 +26,7 @@ namespace PhoneBook.Infra.Repositories.Contact
 
         public bool PostContact(ContactEntity contact)
         {
-            using(var context = new ApplicationContext())
+            using (var context = new ApplicationContext())
             {
                 try
                 {
@@ -37,7 +37,7 @@ namespace PhoneBook.Infra.Repositories.Contact
                 {
                     return false;
                 }
-                
+
                 return true;
             }
         }
