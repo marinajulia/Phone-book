@@ -7,7 +7,7 @@ namespace PhoneBook.Api.Controllers.Contact
 {
     [ApiController]
     [Route("contact")]
-    public class ContactController: Controller
+    public class ContactController : Controller
     {
         private readonly INotification _notification;
         private readonly IPhoneService _phoneService;
@@ -24,6 +24,8 @@ namespace PhoneBook.Api.Controllers.Contact
         public IActionResult GetByValue(string value)
         {
             var response = _contactService.GetByName(value);
+            if (response == null)
+                return Ok(_phoneService.GetByPhone(value));
 
             return Ok(response);
         }

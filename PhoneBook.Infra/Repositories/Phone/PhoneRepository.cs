@@ -20,7 +20,7 @@ namespace PhoneBook.Infra.Repositories.Phone
         {
             using (var context = new ApplicationContext())
             {
-                return context.Phone.Where(x => x.Phone.Trim().ToLower().Contains(phone.Trim().ToLower()));
+                return context.Phone.Where(x => x.Phone.Trim().ToLower().Contains(phone.Trim().ToLower())).ToList();
             }
         }
 

@@ -28,16 +28,10 @@ namespace PhoneBook.Domain.Services.Contact
         {
             var names = _contactRepository.GetContainsName(name);
 
-            if (names == null)
+            if (names.Count() < 1)
                 return null;
 
             return _mapper.Map<IEnumerable<ContactDto>>(names);
-
-            //return names.Select(x => new ContactDto
-            //{
-            //    Id = x.Id,
-            //    Name = x.Name
-            //});
         }
 
         public bool PostContact(ContactDto contact)
