@@ -41,6 +41,5 @@ namespace PhoneBook.Infra.Repositories.Contact
                 return true;
             }
         }
-
-    }s
+    }
 }

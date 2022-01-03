@@ -1,9 +1,7 @@
 ﻿using PhoneBook.Domain.Services.Contact.Dto;
 using PhoneBook.Domain.Services.Phone;
-using PhoneBook.Domain.Services.Phone.Dto;
 using SharedKernel.Domain.Notification;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace PhoneBook.Domain.Services.Contact
 {
@@ -30,7 +28,6 @@ namespace PhoneBook.Domain.Services.Contact
             {
                 if (phones == null)
                     _notification.AddWithReturn<IEnumerable<ContactDto>>("Ops.. não encontramos nenhum registro");
-
             }
             throw new System.NotImplementedException();
         }

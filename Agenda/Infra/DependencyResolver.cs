@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using AutoMapper;
+using Microsoft.Extensions.DependencyInjection;
+using PhoneBook.Domain.Mapper;
 using PhoneBook.Domain.Services.Contact;
 using PhoneBook.Domain.Services.Phone;
 using PhoneBook.Infra.Data;
@@ -12,6 +14,14 @@ namespace PhoneBook.Api.Infra
     {
         public static void Resolve(this IServiceCollection services)
         {
+            var mappingConfig = new MapperConfiguration(m =>
+            {
+                m.AddProfile(new AutoMapperProfile());
+            });
+
+            var mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             services.AddScoped<INotification, Notification>();
             services.AddDbContext<ApplicationContext>();
             Repositories(services);

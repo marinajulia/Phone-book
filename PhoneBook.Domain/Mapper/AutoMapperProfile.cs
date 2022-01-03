@@ -15,7 +15,6 @@ namespace PhoneBook.Domain.Mapper
 
             CreateMap<ContactEntity, ContactDto>();
             CreateMap<ContactDto, ContactEntity>();
-
         }
     }
 }
