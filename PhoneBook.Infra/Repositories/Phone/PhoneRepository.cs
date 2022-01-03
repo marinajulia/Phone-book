@@ -16,6 +16,14 @@ namespace PhoneBook.Infra.Repositories.Phone
             }
         }
 
+        public IEnumerable<PhoneEntity> GetContainsPhone(string phone)
+        {
+            using (var context = new ApplicationContext())
+            {
+                return context.Phone.Where(x => x.Phone.Trim().ToLower().Contains(phone.Trim().ToLower()));
+            }
+        }
+
         public bool PostPhone(PhoneEntity phone)
         {
             using (var context = new ApplicationContext())

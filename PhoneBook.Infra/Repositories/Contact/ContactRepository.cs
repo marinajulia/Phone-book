@@ -8,7 +8,7 @@ namespace PhoneBook.Infra.Repositories.Contact
 {
     public class ContactRepository : IContactRepository
     {
-        public IEnumerable<ContactEntity> GetByName(string name)
+        public IEnumerable<ContactEntity> GetContainsName(string name)
         {
             using (var context = new ApplicationContext())
             {
@@ -16,7 +16,7 @@ namespace PhoneBook.Infra.Repositories.Contact
             }
         }
 
-        public ContactEntity GetName(string name)
+        public ContactEntity GetByName(string name)
         {
             using (var context = new ApplicationContext())
             {
@@ -40,6 +40,11 @@ namespace PhoneBook.Infra.Repositories.Contact
 
                 return true;
             }
+        }
+
+        public string[] GetNameByContainsPhone(string phone)
+        {
+            throw new NotImplementedException();
         }
     }
 }

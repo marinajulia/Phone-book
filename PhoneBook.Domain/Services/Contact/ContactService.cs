@@ -1,5 +1,9 @@
 ﻿using PhoneBook.Domain.Services.Contact.Dto;
+using PhoneBook.Domain.Services.Phone;
+using PhoneBook.Domain.Services.Phone.Dto;
 using SharedKernel.Domain.Notification;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PhoneBook.Domain.Services.Contact
 {
@@ -7,11 +11,28 @@ namespace PhoneBook.Domain.Services.Contact
     {
         private readonly INotification _notification;
         private readonly IContactRepository _contactRepository;
+        private readonly IPhoneRepository _phoneRepository;
 
-        public ContactService(INotification notification, IContactRepository contactRepository)
+        public ContactService(INotification notification, IContactRepository contactRepository,
+            IPhoneRepository phoneRepository)
         {
             _notification = notification;
             _contactRepository = contactRepository;
+            _phoneRepository = phoneRepository;
+        }
+
+        public IEnumerable<ContactDto> GetData(string data)
+        {
+            var names = _contactRepository.GetContainsName(data);
+            var phones = _phoneRepository.GetContainsPhone(data);
+
+            if (names == null)
+            {
+                if (phones == null)
+                    _notification.AddWithReturn<IEnumerable<ContactDto>>("Ops.. não encontramos nenhum registro");
+
+            }
+            throw new System.NotImplementedException();
         }
 
         public bool PostContact(ContactDto contact)
