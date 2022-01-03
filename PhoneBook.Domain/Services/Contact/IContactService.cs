@@ -7,6 +7,6 @@ namespace PhoneBook.Domain.Services.Contact
     {
         bool PostContact(ContactDto contact);
 
-        IEnumerable<ContactDto> GetData(string data);
+        IEnumerable<ContactDto> GetByName(string name);
     }
 }

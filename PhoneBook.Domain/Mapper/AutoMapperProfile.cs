@@ -10,11 +10,8 @@ namespace PhoneBook.Domain.Mapper
     {
         public AutoMapperProfile()
         {
-            CreateMap<PhoneEntity, PhoneDto>();
-            CreateMap<PhoneDto, PhoneEntity>();
-
-            CreateMap<ContactEntity, ContactDto>();
-            CreateMap<ContactDto, ContactEntity>();
+            CreateMap<PhoneEntity, PhoneDto>().ReverseMap();
+            CreateMap<ContactEntity, ContactDto>().ReverseMap();
         }
     }
 }

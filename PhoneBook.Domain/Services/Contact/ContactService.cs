@@ -1,7 +1,10 @@
-﻿using PhoneBook.Domain.Services.Contact.Dto;
+﻿using AutoMapper;
+using PhoneBook.Domain.Services.Contact.Dto;
 using PhoneBook.Domain.Services.Phone;
+using PhoneBook.Domain.Services.Phone.Dto;
 using SharedKernel.Domain.Notification;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PhoneBook.Domain.Services.Contact
 {
@@ -10,26 +13,31 @@ namespace PhoneBook.Domain.Services.Contact
         private readonly INotification _notification;
         private readonly IContactRepository _contactRepository;
         private readonly IPhoneRepository _phoneRepository;
+        private readonly IMapper _mapper;
 
         public ContactService(INotification notification, IContactRepository contactRepository,
-            IPhoneRepository phoneRepository)
+            IPhoneRepository phoneRepository, IMapper mapper)
         {
             _notification = notification;
             _contactRepository = contactRepository;
             _phoneRepository = phoneRepository;
+            _mapper = mapper;
         }
 
-        public IEnumerable<ContactDto> GetData(string data)
+        public IEnumerable<ContactDto> GetByName(string name)
         {
-            var names = _contactRepository.GetContainsName(data);
-            var phones = _phoneRepository.GetContainsPhone(data);
+            var names = _contactRepository.GetContainsName(name);
 
             if (names == null)
-            {
-                if (phones == null)
-                    _notification.AddWithReturn<IEnumerable<ContactDto>>("Ops.. não encontramos nenhum registro");
-            }
-            throw new System.NotImplementedException();
+                return null;
+
+            return _mapper.Map<IEnumerable<ContactDto>>(names);
+
+            //return names.Select(x => new ContactDto
+            //{
+            //    Id = x.Id,
+            //    Name = x.Name
+            //});
         }
 
         public bool PostContact(ContactDto contact)
