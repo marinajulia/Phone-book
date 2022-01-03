@@ -42,9 +42,5 @@ namespace PhoneBook.Infra.Repositories.Contact
             }
         }
 
-        public string[] GetNameByContainsPhone(string phone)
-        {
-            throw new NotImplementedException();
-        }
-    }
+    }s
 }
