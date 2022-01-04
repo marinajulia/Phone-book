@@ -11,7 +11,6 @@ namespace PhoneBook.Domain.Services.Phone
 
         [ForeignKey("Contact")]
         public int IdContact { get; set; }
-
         public ContactEntity Contact { get; set; }
 
         public string Phone { get; set; }

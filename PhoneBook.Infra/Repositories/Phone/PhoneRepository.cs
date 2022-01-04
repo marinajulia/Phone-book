@@ -1,4 +1,5 @@
-﻿using PhoneBook.Domain.Services.Phone;
+﻿using Microsoft.EntityFrameworkCore;
+using PhoneBook.Domain.Services.Phone;
 using PhoneBook.Infra.Data;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,10 @@ namespace PhoneBook.Infra.Repositories.Phone
         {
             using (var context = new ApplicationContext())
             {
-                return context.Phone.Where(x => x.Phone.Trim().ToLower().Contains(phone.Trim().ToLower())).ToList();
+                return context.Phone
+                    .Include(x=> x.Contact)
+                    .Where(x => x.Phone.Trim().ToLower().Contains(phone.Trim().ToLower()))
+                    .ToList();
             }
         }
 

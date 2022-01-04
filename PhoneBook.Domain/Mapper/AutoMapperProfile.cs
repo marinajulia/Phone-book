@@ -12,9 +12,6 @@ namespace PhoneBook.Domain.Mapper
         {
             CreateMap<PhoneEntity, PhoneDto>().ReverseMap();
             CreateMap<ContactEntity, ContactDto>().ReverseMap();
-
-            //CreateMap<ContactEntity, PhoneEntity>().ForMember(x => x.Phones, map => map.MapFrom(prop => prop.)).ReverseMap();
-
             CreateMap<ContactEntity, PhoneEntity>().ForMember(q => q.Id, option => option.Ignore());
             CreateMap<ContactDto, PhoneDto>().ForMember(q => q.Id, option => option.Ignore());
         }
