@@ -24,6 +24,14 @@ namespace PhoneBook.Infra.Repositories.Phone
             }
         }
 
+        public IEnumerable<PhoneEntity> GetPhonesByIdContact(int id)
+        {
+            using (var context = new ApplicationContext())
+            {
+                return context.Phone.Where(x => x.IdContact == id);
+            }
+        }
+
         public bool PostPhone(PhoneEntity phone)
         {
             using (var context = new ApplicationContext())

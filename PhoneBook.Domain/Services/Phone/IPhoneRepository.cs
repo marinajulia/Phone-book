@@ -9,5 +9,7 @@ namespace PhoneBook.Domain.Services.Phone
         IEnumerable<PhoneEntity> GetContainsPhone(string phone);
 
         IEnumerable<PhoneEntity> GetByPhone(string phone);
+
+        IEnumerable<PhoneEntity> GetPhonesByIdContact(int id);
     }
 }
