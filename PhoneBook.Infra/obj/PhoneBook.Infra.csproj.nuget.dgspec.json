@@ -73,6 +73,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -162,6 +166,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -244,6 +252,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using PhoneBook.Domain.Services.Contact.Dto;
 using PhoneBook.Domain.Services.Phone;
-using PhoneBook.Domain.Services.Phone.Dto;
 using SharedKernel.Domain.Notification;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,14 +30,13 @@ namespace PhoneBook.Domain.Services.Contact
             if (names.Count() < 1)
                 return null;
 
-            foreach (var entity in names)
-            {
-                var contactPhones = _phoneRepository.GetPhonesByIdContact(entity.Id);
-                entity.Phones = contactPhones;
-            }
+            //foreach (var entity in names)
+            //{
+            //    var contactPhones = _phoneRepository.GetPhonesByIdContact(entity.Id);
+            //    entity.Phones = contactPhones;
+            //}
 
             return _mapper.Map<IEnumerable<ContactDto>>(names);
-
         }
 
         public bool PostContact(ContactDto contact)
